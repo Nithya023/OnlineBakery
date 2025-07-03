@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetCrumbs - Handmade Delights</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF6; /* Off White */
+            color: #4E342E; /* Espresso Brown */
+        }
+        .btn-primary {
+            @apply bg-[#E3B7A0] text-white px-6 py-3 rounded-full hover:bg-[#4E342E] transition duration-300 shadow-lg; /* Muted Terracotta to Espresso Brown */
+        }
+        .section-heading {
+            @apply text-4xl font-bold text-center text-[#4E342E] mb-8; /* Espresso Brown */
+        }
+        .card {
+            @apply bg-[#FDFBF6] p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 flex flex-col items-center; /* Off White background for cards */
+        }
+        .card img {
+            @apply rounded-lg mb-4 object-cover;
+        }
+        .text-muted-terracotta {
+            color: #E3B7A0;
+        }
+        .text-dusty-rose {
+            color: #D49AA1;
+        }
+        .text-warm-beige {
+            color: #D8C3A5;
+        }
+        .text-espresso-brown {
+            color: #4E342E;
+        }
+        .bg-off-white {
+            background-color: #FDFBF6;
+        }
+        .bg-muted-terracotta {
+            background-color: #E3B7A0;
+        }
+        .bg-dusty-rose {
+            background-color: #D49AA1;
+        }
+        .bg-warm-beige {
+            background-color: #D8C3A5;
+        }
+        .bg-espresso-brown {
+            background-color: #4E342E;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-dusty-rose py-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-5xl font-extrabold text-espresso-brown tracking-tight">SweetCrumbs</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-espresso-brown hover:text-muted-terracotta font-semibold text-lg transition duration-300">Home</a></li>
+                    <li><a href="order.html" class="text-espresso-brown hover:text-muted-terracotta font-semibold text-lg transition duration-300">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-dusty-rose to-off-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-6xl font-extrabold text-espresso-brown mb-6 leading-tight">
+                Handmade Happiness, One Sweet Bite at a Time!
+            </h2>
+            <p class="text-xl text-espresso-brown mb-10 max-w-3xl mx-auto">
+                Your local home-based bakery in [Your City Name], crafting delicious cupcakes, cookies, and custom cakes for every occasion. Perfect for festive seasons and weekend treats!
+            </p>
+            <a href="order.html" class="btn-primary text-xl">Place Your Order Today!</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-16 bg-off-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="section-heading">About SweetCrumbs</h3>
+            <div class="max-w-4xl mx-auto text-lg text-espresso-brown leading-relaxed">
+                <p class="mb-4">
+                    SweetCrumbs is a passionate home bakery dedicated to bringing joy through freshly baked goods. Every cupcake, cookie, and custom cake is lovingly handmade with the finest ingredients, ensuring a delightful experience with every bite.
+                </p>
+                <p class="mb-4">
+                    We specialize in creating unique treats that add a special touch to your celebrations, especially during festive seasons and weekend gatherings. While we're a small business, our commitment to quality and flavor is immense!
+                </p>
+                <p>
+                    Currently, we operate through this simple website and our vibrant <a href="https://www.instagram.com/sweetcrumbsbakery_yourcity/" target="_blank" class="text-muted-terracotta hover:underline font-semibold">Instagram page</a>, where you can see our latest creations!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Products Section -->
+    <section class="py-16 bg-dusty-rose">
+        <div class="container mx-auto px-4">
+            <h3 class="section-heading">Our Delicious Creations</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cupcakes Card -->
+                <div class="card">
+                    <img src="https://placehold.co/400x300/D49AA1/4E342E?text=Cupcakes" alt="Assorted Cupcakes" class="w-full h-48">
+                    <h4 class="text-2xl font-semibold text-espresso-brown mb-2">Delightful Cupcakes</h4>
+                    <p class="text-espresso-brown text-center">
+                        Moist, fluffy, and topped with luscious frosting. Available in a variety of flavors, perfect for any small celebration or a sweet craving.
+                    </p>
+                </div>
+                <!-- Cookies Card -->
+                <div class="card">
+                    <img src="https://placehold.co/400x300/D8C3A5/4E342E?text=Cookies" alt="Freshly Baked Cookies" class="w-full h-48">
+                    <h4 class="text-2xl font-semibold text-espresso-brown mb-2">Irresistible Cookies</h4>
+                    <p class="text-espresso-brown text-center">
+                        Chewy, crispy, and packed with flavor. From classic chocolate chip to unique seasonal delights, our cookies are a crowd-pleaser.
+                    </p>
+                </div>
+                <!-- Custom Cakes Card -->
+                <div class="card">
+                    <img src="https://placehold.co/400x300/E3B7A0/FDFBF6?text=Custom+Cakes" alt="Custom Designed Cake" class="w-full h-48">
+                    <h4 class="text-2xl font-semibold text-espresso-brown mb-2">Custom Celebration Cakes</h4>
+                    <p class="text-espresso-brown text-center">
+                        Dream it, we bake it! Bespoke cakes designed to make your special moments even sweeter. Contact us for personalized designs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cake Pricing Section -->
+    <section class="py-16 bg-off-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="section-heading">Cake Pricing</h3>
+            <div class="max-w-2xl mx-auto bg-warm-beige p-8 rounded-xl shadow-md">
+                <p class="text-xl font-semibold text-espresso-brown mb-4">Our delicious custom cakes are priced per kilogram:</p>
+                <ul class="text-lg text-espresso-brown space-y-2">
+                    <li><span class="font-bold">1 kg:</span> ₹300</li>
+                    <li><span class="font-bold">2 kg:</span> ₹600</li>
+                    <li><span class="font-bold">3 kg:</span> ₹900</li>
+                    <li><span class="font-bold">5 kg:</span> ₹1500</li>
+                    <li>For larger custom orders, please contact us for a personalized quote!</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-gradient-to-l from-dusty-rose to-off-white text-center">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-espresso-brown mb-6">Ready for a Sweet Treat?</h3>
+            <p class="text-xl text-espresso-brown mb-8 max-w-2xl mx-auto">
+                Order your handmade cupcakes, cookies, or custom cake today and experience the SweetCrumbs difference!
+            </p>
+            <a href="order.html" class="btn-primary text-xl">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-espresso-brown text-white py-8">
+        <div class="container mx-auto text-center px-4">
+            <p class="mb-4">&copy; 2025 SweetCrumbs Bakery. All rights reserved.</p>
+            <p>Follow us on <a href="https://www.instagram.com/sweetcrumbsbakery_yourcity/" target="_blank" class="text-warm-beige hover:underline">Instagram</a> for daily updates and new arrivals!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
